@@ -26,9 +26,9 @@ angular.module('bookViewer')
       controller: 'AuthorCtrl'
     }
   },
-  genre: {
+  genres: {
     list: {
-      url: '/genres',
+      url: '/genres/:genre',
       templateUrl: 'views/genres/genres.html',
       controller: 'GenresCtrl'
     }

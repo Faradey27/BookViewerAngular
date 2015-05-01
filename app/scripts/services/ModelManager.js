@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('bookViewer')
-.factory('modelManager', ['$http', '$q', 'Book', 'Author', function($http, $q, Book, Author) {  
+.factory('modelManager', ['$http', '$q', 'Book', 'Author', function($http, $q, Book, Author) {
     var modelManager = {
         _books: {},
         _authors: {},
@@ -38,20 +38,26 @@ angular.module('bookViewer')
         getBook: function(bookId) {
             var deferred = $q.defer();
             var book = this._searchBook(bookId);
+            var self = this;
             if (book) {
                 deferred.resolve(book);
             } else {
-                this.loadModel();
+                this.loadModel().then(function() {
+                    deferred.resolve(self._searchBook(bookId));
+                });
             }
             return deferred.promise;
         },
         getAuthor: function(authorId) {
             var deferred = $q.defer();
             var author = this._searchAuthor(authorId);
-            if (book) {
+            var self = this;
+            if (author) {
                 deferred.resolve(author);
             } else {
-                this.loadModel();
+                this.loadModel().then(function() {
+                    deferred.resolve(self._searchAuthor(authorId));
+                });
             }
             return deferred.promise;
         },
@@ -65,18 +71,18 @@ angular.module('bookViewer')
                 });
             }
             return deferred.promise;
-        }, 
+        },
         loadAuthors: function() {
             var deferred = $q.defer();
-            if (!$.isEmptyObject(this._books)) {
-                deferred.resolve(this._books)
+            if (!$.isEmptyObject(this._authors)) {
+                deferred.resolve(this._authors)
             } else {
                 this.loadModel().then(function(data){
                     deferred.resolve(data.authors);
                 });
             }
             return deferred.promise;
-        }, 
+        },
         loadModel: function() {
             var deferred = $q.defer();
             var scope = this;
@@ -89,7 +95,7 @@ angular.module('bookViewer')
                         books.push(book);
                     });
                     model.authors.forEach(function(authorData) {
-                        var author = scope._retrieveBookInstance(authorData.id, authorData);
+                        var author = scope._retrieveAuthorInstance(authorData.id, authorData);
                         authors.push(author);
                     });
                     deferred.resolve({

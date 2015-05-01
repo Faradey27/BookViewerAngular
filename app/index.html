@@ -18,16 +18,16 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" ng-controller="MainCtrl">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">BookViewer</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#books">Books</a>
+        <li ng-class="{'active': isActiveItem('books')}">
+          <a ng-click="setActiveItem('books')" href="#books">Books</a>
         </li>
-        <li>
-          <a href="#authors">Authors</a>
+        <li ng-class="{'active': isActiveItem('authors')}">
+          <a ng-click="setActiveItem('authors')" href="#authors">Authors</a>
         </li>
       </ul>
     </nav>
@@ -42,11 +42,17 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/routes.js"></script>
+    <script src="scripts/controllers/MainCtrl.js"></script>
     <script src="scripts/controllers/books/BooksCtrl.js"></script>
+    <script src="scripts/controllers/books/BookCtrl.js"></script>
     <script src="scripts/controllers/authors/AuthorsCtrl.js"></script>
+    <script src="scripts/controllers/authors/AuthorCtrl.js"></script>
+    <script src="scripts/controllers/genres/GenresCtrl.js"></script>
     <script src="scripts/services/Author.js"></script>
     <script src="scripts/services/Book.js"></script>
     <script src="scripts/services/ModelManager.js"></script>
+    <script src="scripts/directives/bookList.js"></script>
+    <script src="scripts/filters/filterByGenre.js"></script>
     <!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,44 @@
+<div className='BookPage' >
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{name}}
+        </div>
+        <div class="panel-body">
+            {{short}}
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Authors
+        </div>
+        <div class="panel-body">
+            <div class="books" ng-repeat="author in authors">
+                <div class="Author">
+                    <div class="thumbnail">
+                        <a href="#authors/{{author.id}}">
+                            <h3 class="name">{{author.name}}</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Genre
+        </div>
+        <div class="panel-body">
+            <div class="books">
+                <div class="Author">
+                    <div class="thumbnail">
+                        <a href="#genres/{{genre}}">
+                            <h3 class="name">
+                                {{genre}}
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

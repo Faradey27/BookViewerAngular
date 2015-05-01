@@ -1,0 +1,26 @@
+ <div className='BookPage' >
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{name}}
+        </div>
+        <div class="panel-body">
+            {{biography}}
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Books
+        </div>
+        <div class="panel-body">
+            <div class="books" ng-repeat="book in books">
+                <div class="Author">
+                    <div class="thumbnail">
+                        <a href="#books/{{book.id}}">
+                            <h3 class="name">{{book.name}}</h3>
+                        <a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

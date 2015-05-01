@@ -1,538 +1,193 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'http-server' ]
 2 info using npm@1.4.28
-3 info using node@v0.10.15
-4 verbose readDependencies using package.json deps
-5 verbose install where, deps [ '/home/faradey/MyGit/BookViewerAngular',
-5 verbose install   [ 'autoprefixer-core',
-5 verbose install     'browser-sync',
-5 verbose install     'gulp',
-5 verbose install     'gulp-autoprefixer',
-5 verbose install     'gulp-bower-files',
-5 verbose install     'gulp-cache',
-5 verbose install     'gulp-clean',
-5 verbose install     'gulp-filter',
-5 verbose install     'gulp-flatten',
-5 verbose install     'gulp-load-plugins',
-5 verbose install     'gulp-plumber',
-5 verbose install     'gulp-size',
-5 verbose install     'gulp-uglify',
-5 verbose install     'gulp-useref',
-5 verbose install     'jshint-stylish',
-5 verbose install     'main-bower-files' ] ]
-6 info preinstall @
-7 verbose readDependencies using package.json deps
-8 verbose cache add [ 'gulp@^3.8.8', null ]
-9 verbose cache add name=undefined spec="gulp@^3.8.8" args=["gulp@^3.8.8",null]
-10 verbose parsed url { protocol: null,
-10 verbose parsed url   slashes: null,
-10 verbose parsed url   auth: null,
-10 verbose parsed url   host: null,
-10 verbose parsed url   port: null,
-10 verbose parsed url   hostname: null,
-10 verbose parsed url   hash: null,
-10 verbose parsed url   search: null,
-10 verbose parsed url   query: null,
-10 verbose parsed url   pathname: 'gulp@^3.8.8',
-10 verbose parsed url   path: 'gulp@^3.8.8',
-10 verbose parsed url   href: 'gulp@^3.8.8' }
-11 verbose cache add [ 'gulp-autoprefixer@0.0.7', null ]
-12 verbose cache add name=undefined spec="gulp-autoprefixer@0.0.7" args=["gulp-autoprefixer@0.0.7",null]
-13 verbose parsed url { protocol: null,
-13 verbose parsed url   slashes: null,
-13 verbose parsed url   auth: null,
-13 verbose parsed url   host: null,
-13 verbose parsed url   port: null,
-13 verbose parsed url   hostname: null,
-13 verbose parsed url   hash: null,
-13 verbose parsed url   search: null,
-13 verbose parsed url   query: null,
-13 verbose parsed url   pathname: 'gulp-autoprefixer@0.0.7',
-13 verbose parsed url   path: 'gulp-autoprefixer@0.0.7',
-13 verbose parsed url   href: 'gulp-autoprefixer@0.0.7' }
-14 verbose cache add name="gulp" spec="^3.8.8" args=["gulp","^3.8.8"]
-15 verbose parsed url { protocol: null,
-15 verbose parsed url   slashes: null,
-15 verbose parsed url   auth: null,
-15 verbose parsed url   host: null,
-15 verbose parsed url   port: null,
-15 verbose parsed url   hostname: null,
-15 verbose parsed url   hash: null,
-15 verbose parsed url   search: null,
-15 verbose parsed url   query: null,
-15 verbose parsed url   pathname: '^3.8.8',
-15 verbose parsed url   path: '^3.8.8',
-15 verbose parsed url   href: '^3.8.8' }
-16 verbose addNamed [ 'gulp', '^3.8.8' ]
-17 verbose addNamed [ null, '>=3.8.8-0 <4.0.0-0' ]
-18 verbose cache add name="gulp-autoprefixer" spec="0.0.7" args=["gulp-autoprefixer","0.0.7"]
-19 verbose parsed url { protocol: null,
-19 verbose parsed url   slashes: null,
-19 verbose parsed url   auth: null,
-19 verbose parsed url   host: null,
-19 verbose parsed url   port: null,
-19 verbose parsed url   hostname: null,
-19 verbose parsed url   hash: null,
-19 verbose parsed url   search: null,
-19 verbose parsed url   query: null,
-19 verbose parsed url   pathname: '0.0.7',
-19 verbose parsed url   path: '0.0.7',
-19 verbose parsed url   href: '0.0.7' }
-20 verbose addNamed [ 'gulp-autoprefixer', '0.0.7' ]
-21 verbose addNamed [ '0.0.7', '0.0.7' ]
-22 verbose cache add [ 'gulp-bower-files@0.2.1', null ]
-23 verbose cache add name=undefined spec="gulp-bower-files@0.2.1" args=["gulp-bower-files@0.2.1",null]
-24 verbose parsed url { protocol: null,
-24 verbose parsed url   slashes: null,
-24 verbose parsed url   auth: null,
-24 verbose parsed url   host: null,
-24 verbose parsed url   port: null,
-24 verbose parsed url   hostname: null,
-24 verbose parsed url   hash: null,
-24 verbose parsed url   search: null,
-24 verbose parsed url   query: null,
-24 verbose parsed url   pathname: 'gulp-bower-files@0.2.1',
-24 verbose parsed url   path: 'gulp-bower-files@0.2.1',
-24 verbose parsed url   href: 'gulp-bower-files@0.2.1' }
-25 verbose cache add [ 'gulp-cache@0.1.1', null ]
-26 verbose cache add name=undefined spec="gulp-cache@0.1.1" args=["gulp-cache@0.1.1",null]
-27 verbose parsed url { protocol: null,
-27 verbose parsed url   slashes: null,
-27 verbose parsed url   auth: null,
-27 verbose parsed url   host: null,
-27 verbose parsed url   port: null,
-27 verbose parsed url   hostname: null,
-27 verbose parsed url   hash: null,
-27 verbose parsed url   search: null,
-27 verbose parsed url   query: null,
-27 verbose parsed url   pathname: 'gulp-cache@0.1.1',
-27 verbose parsed url   path: 'gulp-cache@0.1.1',
-27 verbose parsed url   href: 'gulp-cache@0.1.1' }
-28 silly lockFile ed47fb09-gulp-3-8-8 gulp@^3.8.8
-29 verbose lock gulp@^3.8.8 /home/faradey/.npm/ed47fb09-gulp-3-8-8.lock
-30 silly lockFile 48cacbeb-gulp-autoprefixer-0-0-7 gulp-autoprefixer@0.0.7
-31 verbose lock gulp-autoprefixer@0.0.7 /home/faradey/.npm/48cacbeb-gulp-autoprefixer-0-0-7.lock
-32 verbose cache add name="gulp-bower-files" spec="0.2.1" args=["gulp-bower-files","0.2.1"]
-33 verbose parsed url { protocol: null,
-33 verbose parsed url   slashes: null,
-33 verbose parsed url   auth: null,
-33 verbose parsed url   host: null,
-33 verbose parsed url   port: null,
-33 verbose parsed url   hostname: null,
-33 verbose parsed url   hash: null,
-33 verbose parsed url   search: null,
-33 verbose parsed url   query: null,
-33 verbose parsed url   pathname: '0.2.1',
-33 verbose parsed url   path: '0.2.1',
-33 verbose parsed url   href: '0.2.1' }
-34 verbose addNamed [ 'gulp-bower-files', '0.2.1' ]
-35 verbose addNamed [ '0.2.1', '0.2.1' ]
-36 silly lockFile b2b11dd4-gulp-bower-files-0-2-1 gulp-bower-files@0.2.1
-37 verbose lock gulp-bower-files@0.2.1 /home/faradey/.npm/b2b11dd4-gulp-bower-files-0-2-1.lock
-38 verbose cache add [ 'gulp-clean@0.2.4', null ]
-39 verbose cache add name=undefined spec="gulp-clean@0.2.4" args=["gulp-clean@0.2.4",null]
-40 verbose parsed url { protocol: null,
-40 verbose parsed url   slashes: null,
-40 verbose parsed url   auth: null,
-40 verbose parsed url   host: null,
-40 verbose parsed url   port: null,
-40 verbose parsed url   hostname: null,
-40 verbose parsed url   hash: null,
-40 verbose parsed url   search: null,
-40 verbose parsed url   query: null,
-40 verbose parsed url   pathname: 'gulp-clean@0.2.4',
-40 verbose parsed url   path: 'gulp-clean@0.2.4',
-40 verbose parsed url   href: 'gulp-clean@0.2.4' }
-41 verbose cache add [ 'gulp-filter@0.4.1', null ]
-42 verbose cache add name=undefined spec="gulp-filter@0.4.1" args=["gulp-filter@0.4.1",null]
-43 verbose parsed url { protocol: null,
-43 verbose parsed url   slashes: null,
-43 verbose parsed url   auth: null,
-43 verbose parsed url   host: null,
-43 verbose parsed url   port: null,
-43 verbose parsed url   hostname: null,
-43 verbose parsed url   hash: null,
-43 verbose parsed url   search: null,
-43 verbose parsed url   query: null,
-43 verbose parsed url   pathname: 'gulp-filter@0.4.1',
-43 verbose parsed url   path: 'gulp-filter@0.4.1',
-43 verbose parsed url   href: 'gulp-filter@0.4.1' }
-44 verbose cache add name="gulp-cache" spec="0.1.1" args=["gulp-cache","0.1.1"]
-45 verbose parsed url { protocol: null,
-45 verbose parsed url   slashes: null,
-45 verbose parsed url   auth: null,
-45 verbose parsed url   host: null,
-45 verbose parsed url   port: null,
-45 verbose parsed url   hostname: null,
-45 verbose parsed url   hash: null,
-45 verbose parsed url   search: null,
-45 verbose parsed url   query: null,
-45 verbose parsed url   pathname: '0.1.1',
-45 verbose parsed url   path: '0.1.1',
-45 verbose parsed url   href: '0.1.1' }
-46 verbose addNamed [ 'gulp-cache', '0.1.1' ]
-47 verbose addNamed [ '0.1.1', '0.1.1' ]
-48 silly lockFile def469f1-gulp-cache-0-1-1 gulp-cache@0.1.1
-49 verbose lock gulp-cache@0.1.1 /home/faradey/.npm/def469f1-gulp-cache-0-1-1.lock
-50 verbose cache add name="gulp-clean" spec="0.2.4" args=["gulp-clean","0.2.4"]
-51 verbose parsed url { protocol: null,
-51 verbose parsed url   slashes: null,
-51 verbose parsed url   auth: null,
-51 verbose parsed url   host: null,
-51 verbose parsed url   port: null,
-51 verbose parsed url   hostname: null,
-51 verbose parsed url   hash: null,
-51 verbose parsed url   search: null,
-51 verbose parsed url   query: null,
-51 verbose parsed url   pathname: '0.2.4',
-51 verbose parsed url   path: '0.2.4',
-51 verbose parsed url   href: '0.2.4' }
-52 verbose addNamed [ 'gulp-clean', '0.2.4' ]
-53 verbose addNamed [ '0.2.4', '0.2.4' ]
-54 silly lockFile fbadae23-gulp-clean-0-2-4 gulp-clean@0.2.4
-55 verbose lock gulp-clean@0.2.4 /home/faradey/.npm/fbadae23-gulp-clean-0-2-4.lock
-56 verbose cache add name="gulp-filter" spec="0.4.1" args=["gulp-filter","0.4.1"]
-57 verbose parsed url { protocol: null,
-57 verbose parsed url   slashes: null,
-57 verbose parsed url   auth: null,
-57 verbose parsed url   host: null,
-57 verbose parsed url   port: null,
-57 verbose parsed url   hostname: null,
-57 verbose parsed url   hash: null,
-57 verbose parsed url   search: null,
-57 verbose parsed url   query: null,
-57 verbose parsed url   pathname: '0.4.1',
-57 verbose parsed url   path: '0.4.1',
-57 verbose parsed url   href: '0.4.1' }
-58 verbose addNamed [ 'gulp-filter', '0.4.1' ]
-59 verbose addNamed [ '0.4.1', '0.4.1' ]
-60 silly lockFile 5b3a4c9a-gulp-filter-0-4-1 gulp-filter@0.4.1
-61 verbose lock gulp-filter@0.4.1 /home/faradey/.npm/5b3a4c9a-gulp-filter-0-4-1.lock
-62 verbose cache add [ 'gulp-flatten@0.0.2', null ]
-63 verbose cache add name=undefined spec="gulp-flatten@0.0.2" args=["gulp-flatten@0.0.2",null]
-64 verbose parsed url { protocol: null,
-64 verbose parsed url   slashes: null,
-64 verbose parsed url   auth: null,
-64 verbose parsed url   host: null,
-64 verbose parsed url   port: null,
-64 verbose parsed url   hostname: null,
-64 verbose parsed url   hash: null,
-64 verbose parsed url   search: null,
-64 verbose parsed url   query: null,
-64 verbose parsed url   pathname: 'gulp-flatten@0.0.2',
-64 verbose parsed url   path: 'gulp-flatten@0.0.2',
-64 verbose parsed url   href: 'gulp-flatten@0.0.2' }
-65 verbose cache add [ 'gulp-load-plugins@0.5.0', null ]
-66 verbose cache add name=undefined spec="gulp-load-plugins@0.5.0" args=["gulp-load-plugins@0.5.0",null]
-67 verbose parsed url { protocol: null,
-67 verbose parsed url   slashes: null,
-67 verbose parsed url   auth: null,
-67 verbose parsed url   host: null,
-67 verbose parsed url   port: null,
-67 verbose parsed url   hostname: null,
-67 verbose parsed url   hash: null,
-67 verbose parsed url   search: null,
-67 verbose parsed url   query: null,
-67 verbose parsed url   pathname: 'gulp-load-plugins@0.5.0',
-67 verbose parsed url   path: 'gulp-load-plugins@0.5.0',
-67 verbose parsed url   href: 'gulp-load-plugins@0.5.0' }
-68 verbose cache add name="gulp-flatten" spec="0.0.2" args=["gulp-flatten","0.0.2"]
-69 verbose parsed url { protocol: null,
-69 verbose parsed url   slashes: null,
-69 verbose parsed url   auth: null,
-69 verbose parsed url   host: null,
-69 verbose parsed url   port: null,
-69 verbose parsed url   hostname: null,
-69 verbose parsed url   hash: null,
-69 verbose parsed url   search: null,
-69 verbose parsed url   query: null,
-69 verbose parsed url   pathname: '0.0.2',
-69 verbose parsed url   path: '0.0.2',
-69 verbose parsed url   href: '0.0.2' }
-70 verbose addNamed [ 'gulp-flatten', '0.0.2' ]
-71 verbose addNamed [ '0.0.2', '0.0.2' ]
-72 silly lockFile f2046dd2-gulp-flatten-0-0-2 gulp-flatten@0.0.2
-73 verbose lock gulp-flatten@0.0.2 /home/faradey/.npm/f2046dd2-gulp-flatten-0-0-2.lock
-74 verbose cache add name="gulp-load-plugins" spec="0.5.0" args=["gulp-load-plugins","0.5.0"]
-75 verbose parsed url { protocol: null,
-75 verbose parsed url   slashes: null,
-75 verbose parsed url   auth: null,
-75 verbose parsed url   host: null,
-75 verbose parsed url   port: null,
-75 verbose parsed url   hostname: null,
-75 verbose parsed url   hash: null,
-75 verbose parsed url   search: null,
-75 verbose parsed url   query: null,
-75 verbose parsed url   pathname: '0.5.0',
-75 verbose parsed url   path: '0.5.0',
-75 verbose parsed url   href: '0.5.0' }
-76 verbose addNamed [ 'gulp-load-plugins', '0.5.0' ]
-77 verbose addNamed [ '0.5.0', '0.5.0' ]
-78 silly lockFile ec431a9f-gulp-load-plugins-0-5-0 gulp-load-plugins@0.5.0
-79 verbose lock gulp-load-plugins@0.5.0 /home/faradey/.npm/ec431a9f-gulp-load-plugins-0-5-0.lock
-80 verbose cache add [ 'gulp-plumber@0.6.6', null ]
-81 verbose cache add name=undefined spec="gulp-plumber@0.6.6" args=["gulp-plumber@0.6.6",null]
-82 verbose parsed url { protocol: null,
-82 verbose parsed url   slashes: null,
-82 verbose parsed url   auth: null,
-82 verbose parsed url   host: null,
-82 verbose parsed url   port: null,
-82 verbose parsed url   hostname: null,
-82 verbose parsed url   hash: null,
-82 verbose parsed url   search: null,
-82 verbose parsed url   query: null,
-82 verbose parsed url   pathname: 'gulp-plumber@0.6.6',
-82 verbose parsed url   path: 'gulp-plumber@0.6.6',
-82 verbose parsed url   href: 'gulp-plumber@0.6.6' }
-83 verbose cache add [ 'gulp-size@0.3.0', null ]
-84 verbose cache add name=undefined spec="gulp-size@0.3.0" args=["gulp-size@0.3.0",null]
-85 verbose parsed url { protocol: null,
-85 verbose parsed url   slashes: null,
-85 verbose parsed url   auth: null,
-85 verbose parsed url   host: null,
-85 verbose parsed url   port: null,
-85 verbose parsed url   hostname: null,
-85 verbose parsed url   hash: null,
-85 verbose parsed url   search: null,
-85 verbose parsed url   query: null,
-85 verbose parsed url   pathname: 'gulp-size@0.3.0',
-85 verbose parsed url   path: 'gulp-size@0.3.0',
-85 verbose parsed url   href: 'gulp-size@0.3.0' }
-86 verbose cache add name="gulp-plumber" spec="0.6.6" args=["gulp-plumber","0.6.6"]
-87 verbose parsed url { protocol: null,
-87 verbose parsed url   slashes: null,
-87 verbose parsed url   auth: null,
-87 verbose parsed url   host: null,
-87 verbose parsed url   port: null,
-87 verbose parsed url   hostname: null,
-87 verbose parsed url   hash: null,
-87 verbose parsed url   search: null,
-87 verbose parsed url   query: null,
-87 verbose parsed url   pathname: '0.6.6',
-87 verbose parsed url   path: '0.6.6',
-87 verbose parsed url   href: '0.6.6' }
-88 verbose addNamed [ 'gulp-plumber', '0.6.6' ]
-89 verbose addNamed [ '0.6.6', '0.6.6' ]
-90 silly lockFile 696516d0-gulp-plumber-0-6-6 gulp-plumber@0.6.6
-91 verbose lock gulp-plumber@0.6.6 /home/faradey/.npm/696516d0-gulp-plumber-0-6-6.lock
-92 verbose cache add name="gulp-size" spec="0.3.0" args=["gulp-size","0.3.0"]
-93 verbose parsed url { protocol: null,
-93 verbose parsed url   slashes: null,
-93 verbose parsed url   auth: null,
-93 verbose parsed url   host: null,
-93 verbose parsed url   port: null,
-93 verbose parsed url   hostname: null,
-93 verbose parsed url   hash: null,
-93 verbose parsed url   search: null,
-93 verbose parsed url   query: null,
-93 verbose parsed url   pathname: '0.3.0',
-93 verbose parsed url   path: '0.3.0',
-93 verbose parsed url   href: '0.3.0' }
-94 verbose addNamed [ 'gulp-size', '0.3.0' ]
-95 verbose addNamed [ '0.3.0', '0.3.0' ]
-96 silly lockFile e2ab8ee6-gulp-size-0-3-0 gulp-size@0.3.0
-97 verbose lock gulp-size@0.3.0 /home/faradey/.npm/e2ab8ee6-gulp-size-0-3-0.lock
-98 verbose cache add [ 'gulp-uglify@0.2.1', null ]
-99 verbose cache add name=undefined spec="gulp-uglify@0.2.1" args=["gulp-uglify@0.2.1",null]
-100 verbose parsed url { protocol: null,
-100 verbose parsed url   slashes: null,
-100 verbose parsed url   auth: null,
-100 verbose parsed url   host: null,
-100 verbose parsed url   port: null,
-100 verbose parsed url   hostname: null,
-100 verbose parsed url   hash: null,
-100 verbose parsed url   search: null,
-100 verbose parsed url   query: null,
-100 verbose parsed url   pathname: 'gulp-uglify@0.2.1',
-100 verbose parsed url   path: 'gulp-uglify@0.2.1',
-100 verbose parsed url   href: 'gulp-uglify@0.2.1' }
-101 verbose cache add name="gulp-uglify" spec="0.2.1" args=["gulp-uglify","0.2.1"]
-102 verbose parsed url { protocol: null,
-102 verbose parsed url   slashes: null,
-102 verbose parsed url   auth: null,
-102 verbose parsed url   host: null,
-102 verbose parsed url   port: null,
-102 verbose parsed url   hostname: null,
-102 verbose parsed url   hash: null,
-102 verbose parsed url   search: null,
-102 verbose parsed url   query: null,
-102 verbose parsed url   pathname: '0.2.1',
-102 verbose parsed url   path: '0.2.1',
-102 verbose parsed url   href: '0.2.1' }
-103 verbose addNamed [ 'gulp-uglify', '0.2.1' ]
-104 verbose addNamed [ '0.2.1', '0.2.1' ]
-105 silly lockFile 10feeaeb-gulp-uglify-0-2-1 gulp-uglify@0.2.1
-106 verbose lock gulp-uglify@0.2.1 /home/faradey/.npm/10feeaeb-gulp-uglify-0-2-1.lock
-107 verbose cache add [ 'jshint-stylish@^1.0.0', null ]
-108 verbose cache add name=undefined spec="jshint-stylish@^1.0.0" args=["jshint-stylish@^1.0.0",null]
-109 verbose parsed url { protocol: null,
-109 verbose parsed url   slashes: null,
-109 verbose parsed url   auth: null,
-109 verbose parsed url   host: null,
-109 verbose parsed url   port: null,
-109 verbose parsed url   hostname: null,
-109 verbose parsed url   hash: null,
-109 verbose parsed url   search: null,
-109 verbose parsed url   query: null,
-109 verbose parsed url   pathname: 'jshint-stylish@^1.0.0',
-109 verbose parsed url   path: 'jshint-stylish@^1.0.0',
-109 verbose parsed url   href: 'jshint-stylish@^1.0.0' }
-110 verbose cache add [ 'gulp-useref@0.4.2', null ]
-111 verbose cache add name=undefined spec="gulp-useref@0.4.2" args=["gulp-useref@0.4.2",null]
-112 verbose parsed url { protocol: null,
-112 verbose parsed url   slashes: null,
-112 verbose parsed url   auth: null,
-112 verbose parsed url   host: null,
-112 verbose parsed url   port: null,
-112 verbose parsed url   hostname: null,
-112 verbose parsed url   hash: null,
-112 verbose parsed url   search: null,
-112 verbose parsed url   query: null,
-112 verbose parsed url   pathname: 'gulp-useref@0.4.2',
-112 verbose parsed url   path: 'gulp-useref@0.4.2',
-112 verbose parsed url   href: 'gulp-useref@0.4.2' }
-113 verbose cache add name="jshint-stylish" spec="^1.0.0" args=["jshint-stylish","^1.0.0"]
-114 verbose parsed url { protocol: null,
-114 verbose parsed url   slashes: null,
-114 verbose parsed url   auth: null,
-114 verbose parsed url   host: null,
-114 verbose parsed url   port: null,
-114 verbose parsed url   hostname: null,
-114 verbose parsed url   hash: null,
-114 verbose parsed url   search: null,
-114 verbose parsed url   query: null,
-114 verbose parsed url   pathname: '^1.0.0',
-114 verbose parsed url   path: '^1.0.0',
-114 verbose parsed url   href: '^1.0.0' }
-115 verbose addNamed [ 'jshint-stylish', '^1.0.0' ]
-116 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
-117 silly lockFile 522e2e8d-jshint-stylish-1-0-0 jshint-stylish@^1.0.0
-118 verbose lock jshint-stylish@^1.0.0 /home/faradey/.npm/522e2e8d-jshint-stylish-1-0-0.lock
-119 verbose cache add name="gulp-useref" spec="0.4.2" args=["gulp-useref","0.4.2"]
-120 verbose parsed url { protocol: null,
-120 verbose parsed url   slashes: null,
-120 verbose parsed url   auth: null,
-120 verbose parsed url   host: null,
-120 verbose parsed url   port: null,
-120 verbose parsed url   hostname: null,
-120 verbose parsed url   hash: null,
-120 verbose parsed url   search: null,
-120 verbose parsed url   query: null,
-120 verbose parsed url   pathname: '0.4.2',
-120 verbose parsed url   path: '0.4.2',
-120 verbose parsed url   href: '0.4.2' }
-121 verbose addNamed [ 'gulp-useref', '0.4.2' ]
-122 verbose addNamed [ '0.4.2', '0.4.2' ]
-123 silly lockFile 60061ce0-gulp-useref-0-4-2 gulp-useref@0.4.2
-124 verbose lock gulp-useref@0.4.2 /home/faradey/.npm/60061ce0-gulp-useref-0-4-2.lock
-125 verbose cache add [ 'main-bower-files@^2.5.0', null ]
-126 verbose cache add name=undefined spec="main-bower-files@^2.5.0" args=["main-bower-files@^2.5.0",null]
-127 verbose parsed url { protocol: null,
-127 verbose parsed url   slashes: null,
-127 verbose parsed url   auth: null,
-127 verbose parsed url   host: null,
-127 verbose parsed url   port: null,
-127 verbose parsed url   hostname: null,
-127 verbose parsed url   hash: null,
-127 verbose parsed url   search: null,
-127 verbose parsed url   query: null,
-127 verbose parsed url   pathname: 'main-bower-files@^2.5.0',
-127 verbose parsed url   path: 'main-bower-files@^2.5.0',
-127 verbose parsed url   href: 'main-bower-files@^2.5.0' }
-128 verbose cache add [ 'autoprefixer-core@^4.0.2', null ]
-129 verbose cache add name=undefined spec="autoprefixer-core@^4.0.2" args=["autoprefixer-core@^4.0.2",null]
-130 verbose parsed url { protocol: null,
-130 verbose parsed url   slashes: null,
-130 verbose parsed url   auth: null,
-130 verbose parsed url   host: null,
-130 verbose parsed url   port: null,
-130 verbose parsed url   hostname: null,
-130 verbose parsed url   hash: null,
-130 verbose parsed url   search: null,
-130 verbose parsed url   query: null,
-130 verbose parsed url   pathname: 'autoprefixer-core@^4.0.2',
-130 verbose parsed url   path: 'autoprefixer-core@^4.0.2',
-130 verbose parsed url   href: 'autoprefixer-core@^4.0.2' }
-131 verbose cache add name="main-bower-files" spec="^2.5.0" args=["main-bower-files","^2.5.0"]
-132 verbose parsed url { protocol: null,
-132 verbose parsed url   slashes: null,
-132 verbose parsed url   auth: null,
-132 verbose parsed url   host: null,
-132 verbose parsed url   port: null,
-132 verbose parsed url   hostname: null,
-132 verbose parsed url   hash: null,
-132 verbose parsed url   search: null,
-132 verbose parsed url   query: null,
-132 verbose parsed url   pathname: '^2.5.0',
-132 verbose parsed url   path: '^2.5.0',
-132 verbose parsed url   href: '^2.5.0' }
-133 verbose addNamed [ 'main-bower-files', '^2.5.0' ]
-134 verbose addNamed [ null, '>=2.5.0-0 <3.0.0-0' ]
-135 silly lockFile 6c6e87d0-main-bower-files-2-5-0 main-bower-files@^2.5.0
-136 verbose lock main-bower-files@^2.5.0 /home/faradey/.npm/6c6e87d0-main-bower-files-2-5-0.lock
-137 verbose cache add name="autoprefixer-core" spec="^4.0.2" args=["autoprefixer-core","^4.0.2"]
-138 verbose parsed url { protocol: null,
-138 verbose parsed url   slashes: null,
-138 verbose parsed url   auth: null,
-138 verbose parsed url   host: null,
-138 verbose parsed url   port: null,
-138 verbose parsed url   hostname: null,
-138 verbose parsed url   hash: null,
-138 verbose parsed url   search: null,
-138 verbose parsed url   query: null,
-138 verbose parsed url   pathname: '^4.0.2',
-138 verbose parsed url   path: '^4.0.2',
-138 verbose parsed url   href: '^4.0.2' }
-139 verbose addNamed [ 'autoprefixer-core', '^4.0.2' ]
-140 verbose addNamed [ null, '>=4.0.2-0 <5.0.0-0' ]
-141 silly lockFile 85c5ebcc-autoprefixer-core-4-0-2 autoprefixer-core@^4.0.2
-142 verbose lock autoprefixer-core@^4.0.2 /home/faradey/.npm/85c5ebcc-autoprefixer-core-4-0-2.lock
-143 verbose cache add [ 'browser-sync@^1.8.2', null ]
-144 verbose cache add name=undefined spec="browser-sync@^1.8.2" args=["browser-sync@^1.8.2",null]
-145 verbose parsed url { protocol: null,
-145 verbose parsed url   slashes: null,
-145 verbose parsed url   auth: null,
-145 verbose parsed url   host: null,
-145 verbose parsed url   port: null,
-145 verbose parsed url   hostname: null,
-145 verbose parsed url   hash: null,
-145 verbose parsed url   search: null,
-145 verbose parsed url   query: null,
-145 verbose parsed url   pathname: 'browser-sync@^1.8.2',
-145 verbose parsed url   path: 'browser-sync@^1.8.2',
-145 verbose parsed url   href: 'browser-sync@^1.8.2' }
-146 verbose cache add name="browser-sync" spec="^1.8.2" args=["browser-sync","^1.8.2"]
-147 verbose parsed url { protocol: null,
-147 verbose parsed url   slashes: null,
-147 verbose parsed url   auth: null,
-147 verbose parsed url   host: null,
-147 verbose parsed url   port: null,
-147 verbose parsed url   hostname: null,
-147 verbose parsed url   hash: null,
-147 verbose parsed url   search: null,
-147 verbose parsed url   query: null,
-147 verbose parsed url   pathname: '^1.8.2',
-147 verbose parsed url   path: '^1.8.2',
-147 verbose parsed url   href: '^1.8.2' }
-148 verbose addNamed [ 'browser-sync', '^1.8.2' ]
-149 verbose addNamed [ null, '>=1.8.2-0 <2.0.0-0' ]
-150 silly lockFile 5ad4d6bf-browser-sync-1-8-2 browser-sync@^1.8.2
-151 verbose lock browser-sync@^1.8.2 /home/faradey/.npm/5ad4d6bf-browser-sync-1-8-2.lock
-152 silly lockFile ed47fb09-gulp-3-8-8 gulp@^3.8.8
-153 error Error: Attempt to unlock gulp@^3.8.8, which hasn't been locked
-153 error     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:44:11)
-153 error     at cb (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:32:5)
-153 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:41:20
-153 error     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:30:7
-153 error     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
-153 error     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
-153 error     at Object.oncomplete (fs.js:107:15)
-154 error If you need help, you may report this *entire* log,
-154 error including the npm and node versions, at:
-154 error     <http://github.com/npm/npm/issues>
-155 error System Linux 3.11.0-26-generic
-156 error command "node" "/usr/local/bin/npm" "install"
-157 error cwd /home/faradey/MyGit/BookViewerAngular
-158 error node -v v0.10.15
-159 error npm -v 1.4.28
-160 verbose exit [ 1, true ]
+3 info using node@v0.10.33
+4 verbose cache add [ 'http-server', null ]
+5 verbose cache add name=undefined spec="http-server" args=["http-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'http-server',
+6 verbose parsed url   path: 'http-server',
+6 verbose parsed url   href: 'http-server' }
+7 silly lockFile ed608307-http-server http-server
+8 verbose lock http-server /home/faradey/.npm/ed608307-http-server.lock
+9 silly lockFile ed608307-http-server http-server
+10 silly lockFile ed608307-http-server http-server
+11 verbose addNamed [ 'http-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 550353c6-http-server http-server@
+14 verbose lock http-server@ /home/faradey/.npm/550353c6-http-server.lock
+15 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+16 verbose request where is /http-server
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 374ca6cffa493c05
+19 verbose url raw /http-server
+20 verbose url resolving [ 'https://registry.npmjs.org/', './http-server' ]
+21 verbose url resolved https://registry.npmjs.org/http-server
+22 verbose request where is https://registry.npmjs.org/http-server
+23 info trying registry request attempt 1 at 15:57:26
+24 http GET https://registry.npmjs.org/http-server
+25 http 200 https://registry.npmjs.org/http-server
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"6R3KMTCWGDM2FVMQB44EZV6B4"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '44659',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Fri, 01 May 2015 12:57:28 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1430485048.181002,VS0,VE172',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+28 silly addNameRange versions [ 'http-server',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.5.3',
+28 silly addNameRange     '0.5.5',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2',
+28 silly addNameRange     '0.7.3',
+28 silly addNameRange     '0.7.4',
+28 silly addNameRange     '0.7.5',
+28 silly addNameRange     '0.8.0' ] ]
+29 verbose addNamed [ 'http-server', '0.8.0' ]
+30 verbose addNamed [ '0.8.0', '0.8.0' ]
+31 silly lockFile d5e3e4a2-http-server-0-8-0 http-server@0.8.0
+32 verbose lock http-server@0.8.0 /home/faradey/.npm/d5e3e4a2-http-server-0-8-0.lock
+33 silly lockFile a0b6e4df-ttp-server-http-server-0-8-0-tgz https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+34 verbose lock https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz /home/faradey/.npm/a0b6e4df-ttp-server-http-server-0-8-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz',
+35 verbose addRemoteTarball   'd4b671781ec6bf9fa6a311cd1df683b0b37b1491' ]
+36 info retry fetch attempt 1 at 15:57:27
+37 verbose fetch to= /tmp/npm-5022-kFRv2YEU/registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+38 http GET https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+39 http 200 https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+40 silly lockFile a0b6e4df-ttp-server-http-server-0-8-0-tgz https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+41 silly lockFile a0b6e4df-ttp-server-http-server-0-8-0-tgz https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz
+42 silly lockFile d5e3e4a2-http-server-0-8-0 http-server@0.8.0
+43 silly lockFile d5e3e4a2-http-server-0-8-0 http-server@0.8.0
+44 silly lockFile 550353c6-http-server http-server@
+45 silly lockFile 550353c6-http-server http-server@
+46 silly resolved [ { name: 'http-server',
+46 silly resolved     version: '0.8.0',
+46 silly resolved     description: 'A simple zero-configuration command-line http server',
+46 silly resolved     main: './lib/http-server',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/indexzero/http-server.git' },
+46 silly resolved     keywords: [ 'cli', 'command' ],
+46 silly resolved     scripts:
+46 silly resolved      { start: 'node ./bin/http-server',
+46 silly resolved        pretest: 'stylezero bin/ lib/ test',
+46 silly resolved        test: 'vows --spec --isolate' },
+46 silly resolved     contributors:
+46 silly resolved      [ [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object] ],
+46 silly resolved     dependencies:
+46 silly resolved      { colors: '1.0.3',
+46 silly resolved        optimist: '0.6.x',
+46 silly resolved        union: '~0.4.3',
+46 silly resolved        ecstatic: '~0.7.0',
+46 silly resolved        'http-proxy': '^1.8.1',
+46 silly resolved        portfinder: '0.4.x',
+46 silly resolved        opener: '~1.4.0',
+46 silly resolved        corser: '~2.0.0' },
+46 silly resolved     devDependencies: { vows: '0.7.x', request: '2.49.x', stylezero: '2.2.0' },
+46 silly resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     preferGlobal: 'true',
+46 silly resolved     bin: { 'http-server': './bin/http-server', hs: './bin/http-server' },
+46 silly resolved     gitHead: 'ac38a041c954c863fd695b0f70ba251399856812',
+46 silly resolved     homepage: 'https://github.com/indexzero/http-server',
+46 silly resolved     _id: 'http-server@0.8.0',
+46 silly resolved     _shasum: 'd4b671781ec6bf9fa6a311cd1df683b0b37b1491',
+46 silly resolved     _from: 'http-server@',
+46 silly resolved     _npmVersion: '2.2.0',
+46 silly resolved     _nodeVersion: '0.10.33',
+46 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'd4b671781ec6bf9fa6a311cd1df683b0b37b1491',
+46 silly resolved        tarball: 'http://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.8.0.tgz' } ]
+47 info install http-server@0.8.0 into /usr/local/lib
+48 info installOne http-server@0.8.0
+49 verbose lib/node_modules/http-server unbuild
+50 verbose tar unpack /home/faradey/.npm/http-server/0.8.0/package.tgz
+51 silly lockFile c2cc12bc-cal-lib-node-modules-http-server tar:///usr/local/lib/node_modules/http-server
+52 verbose lock tar:///usr/local/lib/node_modules/http-server /home/faradey/.npm/c2cc12bc-cal-lib-node-modules-http-server.lock
+53 silly lockFile fa1d2287-pm-http-server-0-8-0-package-tgz tar:///home/faradey/.npm/http-server/0.8.0/package.tgz
+54 verbose lock tar:///home/faradey/.npm/http-server/0.8.0/package.tgz /home/faradey/.npm/fa1d2287-pm-http-server-0-8-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '775', '664' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/http-server',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/http-server',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 3.16.0-29-generic
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "http-server"
+60 error cwd /home/faradey/MyGit/BookViewerAngular
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/http-server
+64 error fstream_path /usr/local/lib/node_modules/http-server
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/http-server'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

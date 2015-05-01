@@ -2,3 +2,104 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.BookList, .AuthorsPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    min-width: 400px;
+}
+
+.Book {
+    cursor: pointer;
+    margin: 25px;
+}
+
+.name:hover {
+    color: grey;
+}
+
+.dropdownMenu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.author a:hover {
+    color: grey !important;
+}
+
+.dropdown-toggle {
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.btn.btn-default.dropdown-toggle {
+    width: 0;
+    height: 0;
+    padding: 0;
+    display: block;
+}
+
+.thumbnail:hover {
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.dropDownMenu {
+    list-style: none;
+    display: inline-block;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #000000;
+    padding: 12px;
+    min-width: 150px;
+    top: -16px;
+    position: absolute;
+}
+
+.dropDownMenu li a:hover {
+    color: grey !important;
+}
+
+.Author {
+    cursor: pointer;
+    margin: 25px;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a {
+    color: black !important;
+}
+
+a:active {
+    text-decoration: none !important;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    min-width: 400px;
+}

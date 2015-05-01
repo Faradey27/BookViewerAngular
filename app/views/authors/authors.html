@@ -1,0 +1,22 @@
+<div class="AuthorsPage">
+    <div class="Author" ng-repeat="author in authors">
+        <div class="thumbnail">
+            <h3 class="name" ng-click="showDropdown(author.id)">{{author.name}}</h3>
+        </div>
+        <div class="btn-group">
+            <ul ng-show="author.id == activeDropdownAuthorId"
+                class="dropDownMenu">
+                <li>
+                    <a href="#authors/{{author.id}}">
+                        Details
+                    </a>
+                </li>
+                <li ng-repeat="book in author.books">
+                    <a href="#books/{{book.id}}">
+                        {{book.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

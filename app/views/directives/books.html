@@ -1,0 +1,16 @@
+<div class="BookList">
+    <div class="Book" ng-repeat="book in books">
+        <div class="thumbnail">
+            <a href="#books/{{book.id}}">
+                <h3 class="name">{{book.name}}</h3>
+            </a>
+            <p class="authors">
+                <span class="author" ng-repeat="author in book.authors">
+                    <a href="#authors/{{author.id}}">
+                        {{author.name}}
+                    </a>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
